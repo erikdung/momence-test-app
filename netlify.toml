@@ -1,5 +1,5 @@
 [[redirects]]
   from = "/cors-proxy/*"
-  to = "https://www.cnb.cz:splat"
+  to = "https://www.cnb.cz/:splat"
   status = 200
   force = true
