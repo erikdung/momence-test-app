@@ -1,12 +1,12 @@
 import { useQuery } from 'react-query'
 import { addDays, parse, format } from 'date-fns'
 
-import { GET_DAILY_EXCHANGE_RATES, CNB_DOMAIN } from '../consts/endpoints'
+import { GET_DAILY_EXCHANGE_RATES } from '../consts/endpoints'
 import { ENDPOINT_DATE_FORMAT } from '../consts/date'
 import parseCnbTexResponse from '../utils/parseCnbTextResponse'
 
 const fetchExchangeRates = (query?: Record<string, string>) => {
-	const ep = window.location.href.includes('localhost') ? GET_DAILY_EXCHANGE_RATES : `/cors-proxy/${CNB_DOMAIN + GET_DAILY_EXCHANGE_RATES}`
+	const ep = window.location.href.includes('localhost') ? GET_DAILY_EXCHANGE_RATES : `/cors-proxy/${GET_DAILY_EXCHANGE_RATES}`
 	const url = ep + `?${new URLSearchParams({
 		...query,
 		// added this query param to avoid browser caching
