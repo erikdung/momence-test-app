@@ -1,9 +1,9 @@
 # Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This project is the Test app for Momence
-The app show the actual exchange rate from several foreign currencies to CZK
-The data are collected from ČNB official API
+This project is the Test app for Momence.
+The app show the actual exchange rates from several foreign currencies to CZK.
+The data are collected from ČNB official API.
 
 ## Available Scripts
 
